@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var li = '1231yt4y2yh21jg3276tgh12jgr86s8aghj21yhasfsyhdaf';
+        var re = /a/g
+            // console.log(li.match(re));
+        console.log(typeof li);
+        var c = li.match(re);
+        console.log(typeof c);
+        var res = /yh/g
+        var newstr = li.replace(res, function($0, $1, $2) {
+            console.log($0, $1, $2)
+            var str = ''
+            for (var i = 0; i < $0.length; i++) {
+                str += '*'
+            }
+            return str
+        })
+        console.log(newstr);
+    </script>
+</body>
+
+</html>
